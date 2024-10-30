@@ -1,15 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import Blog from './Blog'
+import Dashboard from './Dashboard'
+import { Routes,Route,useLocation } from 'react-router-dom'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const location = useLocation()
   return (
     <>
-    <p>nav here...</p>
-      <h1>First Page codes here...</h1>
+        <Routes location={location} key={location.pathname}>
+          <Route index element={<Blog />} />
+          <Route path="/dashboard" element={<Dashboard/>} />
+        </Routes>
+ 
     </>
   )
 }
