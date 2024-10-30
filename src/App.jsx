@@ -8,6 +8,7 @@ function App() {
 
   return (
     <>
+    <p>nav here...</p>
       <h1>First Page codes here...</h1>
     </>
   )
