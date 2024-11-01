@@ -1,33 +1,13 @@
 import { Link } from "react-router-dom"
-import list from "./images/list.png"
-import menu from"./images/menu.png"
+
 import plus from './images/plus.png'
 import draft from './images/draft.png';
+import BlogPreview from "./BlogPreview";
 
 
 const Dashboard = ()=>{
     return (
         <>
-            <Link to="/">&larr; Back</Link>
-            
-                <div className="container">
-                    <div className="main_heading">
-                        <p>Recently Published</p>
-                    </div>
-                    <div className="corner_items">
-                        <div className="rows">
-                            <img src={list} alt="checklist" />
-                        </div>
-                        <div className="grid">
-                            <img src={menu} alt="menu" />
-                        </div>
-                    </div>
-                </div>
-            
-
-            {/* <Link to="/dashboards"> blog &rarr;</Link> */}
-
-
             <div className="dashboard_main_content">
                <div className="dashboard_content">
 
@@ -71,6 +51,8 @@ const Dashboard = ()=>{
         
                </div>
             </div>
+
+           <BlogPreview />
           
         </>
     )

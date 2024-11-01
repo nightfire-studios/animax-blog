@@ -17,7 +17,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
+    padding: 20px 0;
 
     .navbar_content{
       width: 50%;
@@ -82,54 +82,10 @@ body{
     }
   }
 
-  .container{
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #F79421;
-    
-
-    .main_heading{
-      width: 50%;
-
-       p{
-        font-size: .7rem;
-       }
-    }
-
-    
-    .corner_items{
-      width: 50%;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-
-      .rows{
-      
-    
-
-        img{
-          width:10%;
-        }
-      }
-
-      .grid{
-        border: gray 1px solid;
-        border-radius: 10%;
-        place-items: center;
-
-        img{
-          width: 10%;
-          
-        }
-      }
-    }
-  }
-
   .dashboard_main_content{
     width: 90%;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 20px;
   
 
     .dashboard_content{
@@ -206,6 +162,71 @@ body{
 
    
   }
+
+  .recent{
+    
+    .container{
+      width: 90%;
+      margin: auto;
+      .recent_header{
+        
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #F79421;
+        margin-top: 30px;
+    
+        .main_heading{
+          p{
+            font-size: .8rem;
+          }
+        }
+        
+        .corner_items{
+          display: flex;
+          align-items: center;
+          gap: 20px;
+    
+          .nav_icons{
+            width: 20px;
+    
+            img{
+              width: 100%;
+            }
+          }      
+        }
+        
+      }
+  
+      /* recent preview styling begin here... */
+      .recent_container{
+       .blog_previews{
+        width: 100%;
+        height: 50dvh;
+
+          .no_preview{
+            width: 17%;
+            height: 47%;
+            border: 1px solid rgb(171, 171, 171);
+            display: grid;
+            place-items: center;
+            margin-top: 20px;
+            border-radius: 5px;
+
+            img{
+              width: 15%;
+              opacity: .3;
+            }
+          }
+
+       }
+      }
+    }
+    
+  }
+
+ 
+
+ 
 
   .main_blog_page{
     background-color: rgba(223, 216, 216, 0.151);
