@@ -9,7 +9,7 @@ const Dashboard = ()=>{
     return (
         <>
             <Link to="/">&larr; Back</Link>
-            <nav>
+            
                 <div className="container">
                     <div className="main_heading">
                         <p>Recently Published</p>
@@ -23,7 +23,7 @@ const Dashboard = ()=>{
                         </div>
                     </div>
                 </div>
-            </nav>
+            
 
             {/* <Link to="/dashboards"> blog &rarr;</Link> */}
 

@@ -82,6 +82,50 @@ body{
     }
   }
 
+  .container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #F79421;
+    
+
+    .main_heading{
+      width: 50%;
+
+       p{
+        font-size: .7rem;
+       }
+    }
+
+    
+    .corner_items{
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .rows{
+      
+    
+
+        img{
+          width:10%;
+        }
+      }
+
+      .grid{
+        border: gray 1px solid;
+        border-radius: 10%;
+        place-items: center;
+
+        img{
+          width: 10%;
+          
+        }
+      }
+    }
+  }
+
   .dashboard_main_content{
     width: 90%;
     margin: auto;
