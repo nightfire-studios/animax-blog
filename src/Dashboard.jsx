@@ -3,57 +3,67 @@ import { Link } from "react-router-dom"
 import plus from './images/plus.png'
 import draft from './images/draft.png';
 import BlogPreview from "./BlogPreview";
+import info from './images/info.png'
 
 
-const Dashboard = ()=>{
+const Dashboard = () => {
     return (
         <>
-            <div className="dashboard_main_content">
-               <div className="dashboard_content">
+        <div className="dashboard">
+        <div className="dashboard_main_content">
+                <div className="dashboard_content">
 
                     <Link to="/dashboards">
-                    <div className="blank_page">
-                   
-                     <p>Create New Blank</p>
-                        <div className="logo">
-                           <div className="draft_img">
-                           <img src={plus} alt="plus" />
-                           </div>
+                        <div className="blank_page">
+
+                            <p>Create New Blank</p>
+                            <div className="logo">
+                                <div className="draft_img">
+                                    <img src={plus} alt="plus" />
+                                </div>
+                            </div>
+
                         </div>
-                    
-                </div>
                     </Link>
 
 
-                
 
-                <div className="blank_page">
-                   
-                     <p>Drafts</p>
+
+                    <div className="blank_page">
+
+                        <p>Drafts</p>
                         <div className="logo">
-                           <div className="draft_div">
-                             <div className="draft_img">
-                             <img src={draft} alt="plus" />
-                             <p>No Draft</p>
-                             </div>
-                           </div>
+                            <div className="draft_div">
+                                <div className="draft_img">
+                                    <img src={draft} alt="plus" />
+                                    <p>No Draft</p>
+                                </div>
+                            </div>
                         </div>
-                    
+
+                    </div>
+
+
                 </div>
 
-             
-               </div>
+                <div className="publish_container">
+                    <div className="div">
 
-               <div className="publish_container">
-                <div className="div">
-                    
+                    </div>
+
                 </div>
-        
-               </div>
             </div>
 
-           <BlogPreview />
-          
+            <BlogPreview />
+
+            <div className="info_container">
+                <div className="info">
+                    <img src={info} alt="info icon" />
+                </div>
+            </div>
+        </div>
+           
+
         </>
     )
 }

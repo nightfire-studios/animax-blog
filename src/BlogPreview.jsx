@@ -1,5 +1,6 @@
 import list from "./images/list.png"
 import menu from "./images/menu.png"
+import no_blog from "./images/no-blog.png"
 
 
 const BlogPreview = () => {
@@ -7,7 +8,11 @@ const BlogPreview = () => {
     const noPreview = ()=>{
         return(
             <div className="no_preview">
-                <img src={list} alt="no preview icon" />
+                <div className="content">
+                <img src={no_blog} alt="no preview icon" />
+                <p>No blog Post</p>
+                </div>
+                
             </div>
         )
     }

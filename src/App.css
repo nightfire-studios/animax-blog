@@ -12,7 +12,7 @@ body{
 
 
   .navbar{
-    width: 90%;
+    width: 95%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -72,7 +72,7 @@ body{
           }
 
           p{
-            font-size: .8rem;
+            font-size: .7rem;
           }
         }
  
@@ -82,151 +82,189 @@ body{
     }
   }
 
-  .dashboard_main_content{
-    width: 90%;
-    margin: auto;
-    margin-top: 20px;
-  
-
-    .dashboard_content{
-      display: flex;
-      gap: 40px;
+  .dashboard{
+    background-image: linear-gradient(to bottom,rgba(238, 238, 238, 0.266),white,transparent) ;
+    .dashboard_main_content{
+      width: 90%;
+      margin: auto;
+      padding-top: 20px;
     
-      .blank_page{
-        p{
-          font-size: .7rem;
-          font-weight: bold;
-        }
-        &:first-child{
-         .logo{
-          background-color: #F79421 !important;
-        }
-        }
-      .logo{
-        height: 20dvh;
-        background-color: #F79421;
+  
+      .dashboard_content{
         display: flex;
-        justify-content: center;
-        border-radius: 10px;
-        border: 2px solid rgba(128, 128, 128, 0.801);
-        .draft_img{
-          width: 25%;
-          aspect-ratio: auto 1;
-          display:grid;
-          place-items: center;
-          
-          
-
-          img{
-            width: 60%;
+        gap: 40px;
+      
+        .blank_page{
+          p{
+            font-size: .7rem;
+            font-weight: bold;
+          }
+          &:first-child{
+           .logo{
+            background-color: #F79421 !important;
+          }
+          }
+        .logo{
+          height: 20dvh;
+          background-color: #F79421;
+          display: flex;
+          justify-content: center;
+          border-radius: 10px;
+          border: 2px solid rgba(128, 128, 128, 0.801);
+          .draft_img{
+            width: 25%;
+            aspect-ratio: auto 1;
+            display:grid;
+            place-items: center;
+            
+            
+  
+            img{
+              width: 60%;
+            }
+          }
+          }
+          &:last-child{
+            .logo{
+              width: 100%;
+              height: 20dvh;
+              background-color: white;
+              border: 2px solid rgba(128, 128, 128, 0.438);
+              display: flex;
+              justify-content: center;
+              border-radius: 10px;
+              
+              .draft_div{
+                opacity: .5;
+                aspect-ratio: auto 1;
+                display:grid;
+                place-items: center;
+                .draft_img{
+                  width: 30%;
+                  
+                  
+        
+                  img{
+                    width: 100%;
+                    
+                  }
+  
+                  p{
+                    margin: 0;
+                    
+                  }
+                }
+              }
+              }
           }
         }
-        }
-        &:last-child{
-          .logo{
-            width: 100%;
-            height: 20dvh;
-            background-color: white;
-            border: 2px solid rgba(128, 128, 128, 0.438);
-            display: flex;
-            justify-content: center;
-            border-radius: 10px;
-            
-            .draft_div{
-              opacity: .5;
-              aspect-ratio: auto 1;
-              display:grid;
-              place-items: center;
-              .draft_img{
-                width: 30%;
-                
-                
+        
+      }
       
+     
+  
+     
+    }
+  
+    /* Blog preview begins here */
+    .recent{
+      
+      .container{
+        width: 90%;
+        margin: auto;
+        .recent_header{
+          
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid #F79421;
+          margin-top: 30px;
+      
+          .main_heading{
+            p{
+              font-size: .7rem;
+            }
+          }
+          
+          .corner_items{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+      
+            .nav_icons{
+              width: 20px;
+      
+              img{
+                width: 100%;
+              }
+            }      
+          }
+          
+        }
+    
+        /* recent preview styling begin here... */
+        .recent_container{
+         .blog_previews{
+          width: 100%;
+          height: 50dvh;
+          overflow: auto;
+  
+            .no_preview{
+              width: 250px;
+              height: 50%;
+              border: 1px solid rgb(171, 171, 171);
+              display: grid;
+              place-items: center;
+              margin-top: 40px;
+              border-radius: 5px;
+              opacity: .5;
+
+              .content{
+                display: grid;
+                place-items: center;
+                width: 100%;
+                opacity: .5;
                 img{
-                  width: 100%;
-                  
+                  width: 15%;
+                
                 }
 
                 p{
-                  margin: 0;
-                  
+                  margin: 5px 0;
+                  font-size: .7rem;
                 }
               }
+  
+              
             }
-            }
+  
+         }
         }
       }
       
     }
+  
+    /* Info stying begins here... */
+    .info_container{
+      width: 95%;
+      margin: auto;
+      display: flex;
+      justify-content: flex-end;
+  
+      .info{
+        width: 15px;
+        cursor: pointer;
     
-
+        img{
+          width: 100%;
+        }
+      }
+    }
    
   }
 
-  .recent{
-    
-    .container{
-      width: 90%;
-      margin: auto;
-      .recent_header{
-        
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 1px solid #F79421;
-        margin-top: 30px;
-    
-        .main_heading{
-          p{
-            font-size: .8rem;
-          }
-        }
-        
-        .corner_items{
-          display: flex;
-          align-items: center;
-          gap: 20px;
-    
-          .nav_icons{
-            width: 20px;
-    
-            img{
-              width: 100%;
-            }
-          }      
-        }
-        
-      }
-  
-      /* recent preview styling begin here... */
-      .recent_container{
-       .blog_previews{
-        width: 100%;
-        height: 50dvh;
-
-          .no_preview{
-            width: 17%;
-            height: 47%;
-            border: 1px solid rgb(171, 171, 171);
-            display: grid;
-            place-items: center;
-            margin-top: 20px;
-            border-radius: 5px;
-
-            img{
-              width: 15%;
-              opacity: .3;
-            }
-          }
-
-       }
-      }
-    }
-    
-  }
-
  
 
- 
+ /* Main blog styling begins here */
 
   .main_blog_page{
     background-color: rgba(223, 216, 216, 0.151);
